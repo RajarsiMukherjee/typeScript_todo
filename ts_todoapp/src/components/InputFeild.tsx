@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 interface Props{
     todo: string;
@@ -7,6 +7,7 @@ interface Props{
 }
 
 const InputFeild: React.FC<Props> = ({ todo, setTodo}) => {
+   
   return (
     <div>
        <form className="input">
